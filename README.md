@@ -4,9 +4,9 @@
 
 ## Integrantes del Equipo
 
-| Kathryn Mora |
-| Matias Pardo|
-| Noemi Pichiguen|
+*Kathryn Mora *
+*Matias Pardo *
+*Noemi Pichiguen *
 
 ---
 
