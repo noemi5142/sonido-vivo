@@ -1,0 +1,55 @@
+:root {
+    --color-principal: #2c3e50 ; 
+    --color-acento: #E67E22;   
+    --color-fondo: #F4F6F8;    
+    --color-blanco: #FFFFFF;    
+    --color-error: #e74c3c;     
+    --color-exito: #27ae60;    
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    line-height: 1.6;
+}
+
+.contenedor { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+.encabezado {
+    background: var(--color-principal);
+    color: white;
+    padding: 1rem;
+}
+
+.encabezado .contenedor { display: flex; justify-content: space-between; align-items: center; }
+
+.logo { font-size: 1.5rem; font-weight: bold; }
+
+.menu ul { list-style: none; display: flex; gap: 1.5rem; }
+
+.menu a { color: white; text-decoration: none; font-weight: 500; }
+
+.menu a.activo { color: var(--color-acento); }
+
+
+.pie-pagina {
+    background: var(--color-principal);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+
+.seccion-destacada {
+    background: var(--color-principal);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.titulo-centrado { text-align: center; margin-bottom: 2rem; font-size: 2rem; }
