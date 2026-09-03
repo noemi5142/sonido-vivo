@@ -61,16 +61,16 @@ body {
     padding: 2rem 0;
 
 }
-.tarjeta{
+.tarjeta {
     background: var(--color-blanco);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0,05);
     overflow: hidden;
     transition: transform 0.3s;
 }
-.tarta:hover{transform: translateY(-5px);}
-.tarjeta img{width: 100%; height: 200px; object-fit: cover; background: #eee;}
-.info-tarjeta{padding: 1.5rem;}
+.tarjeta:hover {transform: translateY(-5px);}
+.tarjeta img {width: 100%; height: 200px; object-fit: cover; background: #eee;}
+.info-tarjeta {padding: 1.5rem;}
 .categoria {font-size: 0.8rem; color: var(--color-acento); text-transform: uppercase;}
 .precio { font-size: 1.2rem; font-weight: bold; margin-top: 0.5rem;}
 
