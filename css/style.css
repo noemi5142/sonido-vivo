@@ -69,7 +69,7 @@ body {
     transition: transform 0.3s;
 }
 .tarjeta:hover {transform: translateY(-5px);}
-.tarjeta img {width: 100%; height: 200px; object-fit: cover; background: #eee;}
+.tarjeta img {width: 100%; height: 200px; object-fit: contain; background: #eee;}
 .info-tarjeta {padding: 1.5rem;}
 .categoria {font-size: 0.8rem; color: var(--color-acento); text-transform: uppercase;}
 .precio { font-size: 1.2rem; font-weight: bold; margin-top: 0.5rem;}
