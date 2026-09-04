@@ -16,7 +16,12 @@ body {
     line-height: 1.6;
 }
 
-.contenedor { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+.contenedor { 
+    text-align: center;    
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 1rem;
+ }
 
 .encabezado {
     background: var(--color-principal);
@@ -24,15 +29,32 @@ body {
     padding: 1rem;
 }
 
-.encabezado .contenedor { display: flex; justify-content: space-between; align-items: center; }
+.encabezado .contenedor { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
 
-.logo { font-size: 1.5rem; font-weight: bold; }
+.logo {
+    max-height: 100px; 
+    margin-left: -155px;
+    width: auto;      
+    display: block;  
+    object-fit: contain;
+}
 
-.menu ul { list-style: none; display: flex; gap: 1.5rem; }
+.menu ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 1.5rem; }
 
-.menu a { color: white; text-decoration: none; font-weight: 500; }
+.menu a { color: white; 
+    text-decoration: none; 
+    font-weight: 500; }
 
-.menu a.activo { color: var(--color-acento); }
+.menu a.activo { 
+    color: var(--color-acento); 
+}
 
 
 .pie-pagina {
@@ -52,7 +74,10 @@ body {
 }
 
 
-.titulo-centrado { text-align: center; margin-bottom: 2rem; font-size: 2rem; }
+.titulo-centrado { 
+    text-align: center; 
+    margin-bottom: 2rem; 
+    font-size: 2rem; }
 
 .grilla-productos{
     display: grid;
