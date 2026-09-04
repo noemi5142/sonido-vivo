@@ -103,3 +103,39 @@ body {
     .encabezado .contenedor { flex-direction: column; gap: 1rem; }
     .grilla-productos {grid-template-columns: 1fr;}
 }
+
+/* Alineación del header (Logo a la izquierda, Menú al centro, Carro a la derecha) */
+.header-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo del enlace del carro */
+.carrito-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ee6707; /* Color oscuro del texto */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+
+.icono-carrito {
+    width: 24px;
+    height: 24px;
+    stroke: #ee6707;
+    transition: stroke 0.2s ease;
+}
+
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
