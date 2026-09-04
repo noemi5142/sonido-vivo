@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class= "encabezado">
-        <div class="contenedor">
+        <div class="contenedor header-contenedor">
             <a href="index.html">
                 <img src="img/logo.jpg" alt="Sonido Vivo - Tienda de Instrumentos Musicales" class="logo">
             </a>
@@ -19,20 +19,33 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+             <a href="carro.html" class="carrito-link">
+                <svg class="icono-carrito" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span>Carro</span>
+            </a>
         </div>
     </header>
-    <main class="Contenedor">
-        <h2 class="titulo centrado" style="margin-top: 2rem;"> Nuestro Catálogo</h2>
+    <main class="contenedor">
+        <h2 class="titulo-centrado" style="margin-top: 2rem;"> Nuestro Catálogo</h2>
         <div class="grilla-productos">
 
         <!--Primer producto del catalogo Yamaha F310-->
-       <article class="tarjeta"     
-        <img src="F310NT000000-1.jpg" alt="Guitarra Acústica Yamaha F310" loading="lazy">
+       <article class="tarjeta"> 
+            <div class="imagen-producto">
+                <img src="img/F310NT000000-1.jpg" alt="Guitarra Acústica Yamaha F310" loading="lazy">
+        </div>
         <div class="info-tarjeta">
             <span class="categoria">Guitarras Acústicas</span>
             <h3>Yamaha F310</h3>
             <p> Tapa de abeto, ideal para principiante.</p>
+            <span class="stock">Disponible: 8</span>
             <p class="precio">$129.990</p>
+                <button class="btn-anadir" type="button">AÑADIR</button>
+
         </div>
         </article>
 
@@ -43,8 +56,10 @@
                 <span class="categoria">Guitarras Eléctricas</span>
                 <h3>Squier Affinity strat</h3>
                 <p>Cuerpo álamo, pastillas SSS.</p>
+                <span class="stock">Disponible: 6</span>
                 <p class="precio">$249.990</p>
-            </div>
+                <button class="btn-anadir" type="button">AÑADIR</button>
+        </div>
         </article>
 
         <!--Tercer producto agregado Pearl Roadshow-->
@@ -54,42 +69,58 @@
                 <span class="categoria">Baterías</span>
                 <h3>Pearl Roadshow</h3>
                 <p>Incluye stands y platillos.</p>
-                <p class="precio">$599.990</p>
-            </div>
+                <span class="stock">Disponible: 7</span>
+                <p class="precio">$599.990</p>          
+                <button class="btn-anadir" type="button">AÑADIR</button>
+            
+        </div>
         </article>
         <!--Cuarto producto ukelele 21p-->
         <article class="tarjeta">
-            <img src="img/ukelele.jpg" alt="Alaguez Ukelele 21P" loading="lazy"
+            <div class="imagen-producto">
+            <img src="img/ukelele.jpg" alt="Alaguez Ukelele 21P" loading="lazy">
+            </div>
             <div class="info-tarjeta">
                 <span class="categoria">Ukeleles</span>
                 <h3>Alaguez Ukelele 21P</h3>
                 <p>Incluye Bolso de transporte.</p>
+                <span class="stock">Disponible: 10</span>
                 <p class="precio">$39.990</p>
-            </div>
+                <button class="btn-anadir" type="button">AÑADIR</button>
+            
+        </div>
         </article>
         <!--Quinto producto Alaguez violin 4/4 natural -->
         <article class="tarjeta">
-            <img src="img/violin.jpg" alt="Alaguez violin 4/4 natural" loading="lazy"
+            <div class="imagen-producto">
+            <img src="img/violin.jpg" alt="Alaguez Violín 4/4 Natural" loading="lazy">
+            </div>
             <div class="info-tarjeta">
                 <span class="categoria">Violines</span>
                 <h3>Alaguez violin 4/4 natural</h3>
                 <p>Incluye n estuche rígido y accesorios necesarios para que puedas tocar y proteger tu equipo desde el primer momento.</p>
+                <span class="stock">Disponible: 20</span>
                 <p class="precio">$69.990</p>
-            </div>
+                <button class="btn-anadir" type="button">AÑADIR</button>
+        </div>
         </article>
         <!-- Sexto producto shure SM58-->
         <article class="tarjeta">
+            <div class="imagen-producto">
                 <img src="img/shure.jpg" alt="Micrófono Dinámico vocal Shure SM58" loading="lazy">
+               </div>
                 <div class="info-tarjeta">
                     <span class="categoria">Micrófonos Dinámicos</span>
                     <h3>Shure SM58</h3>
                     <p>El legendario micrófono vocal de Shure está sintonizado para acentuar la calidez y la nitidez de vocalistas principales y coros.</p>
+                    <span class="stock">Disponible: 8</span>
                     <p class="precio">$149.990</p>
-                </div>
+                    <button class="btn-anadir" type="button">AÑADIR</button>
+        </div>
             </article>
         </div>
     </main>
-    <footer class="pie-de-pagina">
+    <footer class="pie-pagina">
         <div class="contenedor"><p>&copy; 2026 Sonido Vivo.</p></div>
     </footer>
 </body>
