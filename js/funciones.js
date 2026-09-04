@@ -7,8 +7,6 @@ Document.addEventListener('DOMContentLoaded', function(){
         // evita la recarga
         e.preventDefault();
 
-        //limpia los estados previos
-
         document.querySelectorAll('.error-texto').forEach(el => el.textContent = '');
         document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
         msgExito.style.display = 'none';
@@ -21,6 +19,14 @@ Document.addEventListener('DOMContentLoaded', function(){
         if (nombre.ariaValueMax.trim().length < 3){
             document.getElementById('error-nombre').textContent = 'Ingresa al menos 3 caracteres';
             nombre.classList.add('input-error');
+            valido = false;
+        }
+
+        const email = document.getElementById('email');
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!regexEmail.test(email.value)) {
+            document.getElementById('error-email').textContent = 'Formato de correo inválido (ej: user@mail.com)';
+            email.classList.add('input-error');
             valido = false;
         }
     });
