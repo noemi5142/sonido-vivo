@@ -24,5 +24,64 @@
         <h2 class="titulo-centrado" style="margin-top: 2rem;">Contáctanos</h2>
         
         <form id="mi-formulario" class="caja-formulario" novalidate>
+
+            <!-- Campo 1: Nombre -->
+            <div class="campo">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" required>
+                <small class="error-texto" id="error-nombre"></small>
+            </div>
+
+        
+            <!-- Campo 2: Email -->
+            <div class="campo">
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" required>
+                <small class="error-texto" id="error-email"></small>
+            </div>
+
+            <!-- Campo 3: Telefono (opcional, sin validación obligatoria)-->
+            <div class="campo">
+                <label for="telefono ">Teléfono</label>
+                <input type="tel" id="telefono">
+            </div>
+
+            <!-- Campo 4: Motivo -->
+            <div class="campo">
+                <label for="motivo">Motivo de consulta *</label>
+                <select id="motivo" required>
+                    <option value="">Seleccionar una opción</option>
+                    <option value="stock">Consulta Stock</option>
+                    <option value="servicio">Servicio Tecnico</option>
+                    <option value="envios">Envíos</option>
+                </select>
+                <small class="error-texto" id="error-motivo"></small>
+            </div>
+
+            <!-- Campo 5: Mensaje -->
+            <div class="campo">
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" rows="4"></textarea>
+                <small class="error-text" id="error-mensaje"></small>
+            </div>
+
+            <button type="submit" class="boton">Enviar consulta</button>
+
+            <!-- Mensaje de confirmación visible (Guía 08) -->
+            <div id="mensaje-confirmacion" class="mensaje-exito">
+                ¡consulta enviada correctamente! Te contactaremos pronto.
+
+            </div>
+        </form>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor"><p>&copy; 2026 Sonido Vivo.</p></div>
+    </footer>
+    <script src="js/funciones.js"></script>
 </body>
 </html>
+
+            
+
+
