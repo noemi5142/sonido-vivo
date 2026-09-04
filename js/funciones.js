@@ -29,5 +29,13 @@ Document.addEventListener('DOMContentLoaded', function(){
             email.classList.add('input-error');
             valido = false;
         }
+
+        // Validar Motivo
+        const motivo = document.getElementById('motivo');
+        if (motivo.value === "") {
+            document.getElementById('error-motivo').textContent = 'Selecciona un motivo';
+            motivo.classList.add('input-error');
+            valido = false;
+        }
     });
 });
