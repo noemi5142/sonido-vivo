@@ -37,5 +37,17 @@ Document.addEventListener('DOMContentLoaded', function(){
             motivo.classList.add('input-error');
             valido = false;
         }
+        
+        const mensaje = document.getElementById('mensaje');
+        if (mensaje.value.trim().length < 10) {
+            document.getElementById('error-mensaje').textContent = 'El mensaje debe tener más de 10 caracteres';
+            valido = false;
+        }
+
+        if (valido) {
+            alert('¡Consulta enviada! Te contactaremos pronto.');
+            form.reset();
+        }
+        
     });
 });
