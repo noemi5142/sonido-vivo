@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>contacto - Sonido Vivo</title>
+=======
+    <title>Contacto - Sonido Vivo</title>
+>>>>>>> 746b823 (se corrigio el manejo de errores en contacto en casa campo oblogatorio.)
     <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
     <header class="encabezado">
         <div class="contenedor">
             <h1 class="logo-text">
-                <img src="img/logo.jpg" alt="Sonido Vivo - Tienda de Instrumentos Musicales" class="logo">
+                <img src="img/logo.jpg" alt="Sonido Vivo" class="logo">
             </h1>
             <nav class="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="contacto.html" class="activo">contacto</a></li>
+                    <li><a href="contacto.html" class="activo">Contacto</a></li>
                 </ul>
             </nav>
         </div>    
@@ -26,35 +30,34 @@
         <h2 class="titulo-centrado" style="margin-top: 2rem;">Contáctanos</h2>
         
         <form id="mi-formulario" class="caja-formulario" novalidate>
-
             <!-- Campo 1: Nombre -->
             <div class="campo">
                 <label for="nombre">Nombre completo *</label>
-                <input type="text" id="nombre" required>
+                <input type="text" id="nombre">
                 <small class="error-texto" id="error-nombre"></small>
             </div>
 
-        
             <!-- Campo 2: Email -->
             <div class="campo">
                 <label for="email">Correo electrónico *</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email">
                 <small class="error-texto" id="error-email"></small>
             </div>
 
-            <!-- Campo 3: Telefono (opcional, sin validación obligatoria)-->
+            <!-- Campo 3: Telefono (opcional)-->
             <div class="campo">
-                <label for="telefono ">Teléfono</label>
-                <input type="tel" id="telefono">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Ej; 9123345678">
+                <small class="Error-texto" id="error-telefono"></small>
             </div>
 
             <!-- Campo 4: Motivo -->
             <div class="campo">
                 <label for="motivo">Motivo de consulta *</label>
-                <select id="motivo" required>
+                <select id="motivo">
                     <option value="">Seleccionar una opción</option>
                     <option value="stock">Consulta Stock</option>
-                    <option value="servicio">Servicio Tecnico</option>
+                    <option value="servicio">Servicio Técnico</option>
                     <option value="envios">Envíos</option>
                 </select>
                 <small class="error-texto" id="error-motivo"></small>
@@ -64,15 +67,14 @@
             <div class="campo">
                 <label for="mensaje">Mensaje *</label>
                 <textarea id="mensaje" rows="4"></textarea>
-                <small class="error-text" id="error-mensaje"></small>
+                <small class="error-texto" id="error-mensaje"></small>
             </div>
 
             <button type="submit" class="boton">Enviar consulta</button>
 
-            <!-- Mensaje de confirmación visible (Guía 08) -->
+            <!-- Mensaje de confirmación -->
             <div id="mensaje-confirmacion" class="mensaje-exito">
-                ¡consulta enviada correctamente! Te contactaremos pronto.
-
+                ¡Consulta enviada correctamente! Te contactaremos pronto.
             </div>
         </form>
     </main>
@@ -83,7 +85,3 @@
     <script src="js/funciones.js"></script>
 </body>
 </html>
-
-            
-
-
