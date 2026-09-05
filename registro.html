@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Usuario - Sonido Vivo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <header class="encabezado">
         <div class="contenedor">
+
             <a href="index.html">
                 <img src="img/logo.jpg" alt="Sonido Vivo - Tienda de Instrumentos Musicales" class="logo">
             </a>
+
             <nav class="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Catálogo</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+
     <main class="contenedor espaciador-superior">
         <div class="caja-formulario">
+
             <h2 class="titulo-centrado">Crear Cuenta</h2>
+            <div id="mensaje-registro" class="mensaje-exito" role="alert" aria-live="polite"></div>
             <form id="form-registro" novalidate>
+
                 <div class="campo">
-                    <label for="reg-run">RUN * (Sin puntos ni guion)</label>
-                    <input type="text" id="reg-run" required placeholder="Ej: 19011022K" maxlength="10">
+                    <label for="reg-run"> RUN * (Sin puntos ni guion)</label>
+                    <input type="text" id="reg-run" placeholder="Ej: 19011022K" maxlength="9" autocomplete="off"
+                        required>
                     <small class="error-texto" id="error-reg-run"></small>
                 </div>
 
+                <!-- NOMBRE -->
                 <div class="campo">
                     <label for="reg-nombre">Nombre *</label>
-                    <input type="text" id="reg-nombre" required maxlength="50">
+                    <input type="text" id="reg-nombre" maxlength="50" autocomplete="given-name" required>
                     <small class="error-texto" id="error-reg-nombre"></small>
                 </div>
 
+
+                <!-- APELLIDOS -->
                 <div class="campo">
                     <label for="reg-apellidos">Apellidos *</label>
-                    <input type="text" id="reg-apellidos" required maxlength="100">
+                    <input type="text" id="reg-apellidos" maxlength="100" autocomplete="family-name" required>
                     <small class="error-texto" id="error-reg-apellidos"></small>
                 </div>
 
+
+                <!-- CORREO -->
                 <div class="campo">
                     <label for="reg-email">Correo Electrónico *</label>
-                    <input type="email" id="reg-email" required maxlength="100">
+                    <input type="email" id="reg-email" maxlength="100" placeholder="ejemplo@correo.cl"
+                        autocomplete="email" required>
                     <small class="error-texto" id="error-reg-email"></small>
                 </div>
 
+                <!-- REGIÓN -->
                 <div class="campo">
                     <label for="reg-region">Región *</label>
                     <select id="reg-region" required>
@@ -72,6 +90,8 @@
                     <small class="error-texto" id="error-reg-region"></small>
                 </div>
 
+
+                <!-- COMUNA -->
                 <div class="campo">
                     <label for="reg-comuna">Comuna *</label>
                     <select id="reg-comuna" required disabled>
@@ -80,25 +100,46 @@
                     <small class="error-texto" id="error-reg-comuna"></small>
                 </div>
 
+                <!-- DIRECCIÓN -->
                 <div class="campo">
-                    <label for="reg-direccion">Dirección *</label>
-                    <input type="text" id="reg-direccion" required maxlength="300">
+                    <label for="reg-direccion">Dirección * </label>
+                    <input type="text" id="reg-direccion" maxlength="300" placeholder="Ej: Avenida Libertad 1234"
+                        autocomplete="street-address" required>
                     <small class="error-texto" id="error-reg-direccion"></small>
                 </div>
 
-                <button type="submit" class="boton">Registrarse</button>
-                <p style="text-align:center; margin-top:1rem;">
-                    ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
-                </p> 
-                
+                <!-- CONTRASEÑA -->
+                <div class="campo">
+                    <label for="reg-password">Contraseña *</label>
+                    <input type="password" id="reg-password" minlength="8" autocomplete="new-password" required>
+                    <small class="error-texto" id="error-reg-password"></small>
+                </div>
+
+                <!-- CONFIRMAR CONTRASEÑA -->
+                <div class="campo">
+                    <label for="reg-password-confirm">Confirmar Contraseña * </label>
+                    <input type="password" id="reg-password-confirm" minlength="8" autocomplete="new-password" required>
+                    <small class="error-texto" id="error-reg-password-confirm"></small>
+                </div>
+
+                <button type="submit" class="boton">Registrarse </button>
+                <div id="mensaje-registro" class="mensaje-exito"></div>
+
+                <p style="text-align:center; margin-top:1rem;">¿Ya tienes cuenta?
+                    <a href="login.html">Inicia sesión </a>
+                </p>
             </form>
         </div>
     </main>
 
     <footer class="pie-pagina">
-        <div class="contenedor"><p>&copy; 2026 Sonido Vivo. Viña del Mar, Chile.</p></div>
+        <div class="contenedor">
+            <p>&copy; 2026 Sonido Vivo. Viña del Mar, Chile.</p>
+        </div>
     </footer>
 
-    <script src="js/funciones.js"></script>
+    <!-- ESTE FORMULARIO USA SOLO registro.js -->
+    <script src="js/registro.js"></script>
 </body>
+
 </html>
