@@ -183,6 +183,48 @@ body {
     color: var(--color-principal);
 }
 
+/* SECCIÓN MARCAS */
+.grilla-marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.tarjeta-marca {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    max-width: 150px;
+}
+
+.tarjeta-marca:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.tarjeta-marca img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .grilla-marcas {
+        gap: 1.5rem;
+    }
+    
+    .tarjeta-marca {
+        max-width: 100px;
+    }
+}
+
+
 /* FORMULARIOS Y VALIDACIONES */
 
 .caja-formulario {
@@ -232,7 +274,6 @@ body {
     font-size: 0.85rem; 
     margin-top: 0.3rem; 
     display: block; 
-    min-height: 1.2em;
 }
 
 .input-error {
@@ -348,3 +389,5 @@ body {
         margin: 2rem 1rem; 
     }
 }
+
+
