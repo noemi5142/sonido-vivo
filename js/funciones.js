@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const msgExito = document.getElementById('mensaje-confirmacion');
 
     form.addEventListener('submit', function(e) {
-        // 1. Evitar recarga (Guía 08)
         e.preventDefault(); 
         
         // Limpiar estados previos
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
             valido = false;
         }
 
-        // Validar Email con Regex (Guía 08)
         const email = document.getElementById('email');
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!regexEmail.test(email.value)) {
@@ -46,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             valido = false;
         }
 
-        // Mostrar confirmación solo si es válido (Guía 08)
+        // Mostrar confirmación solo si es válido
         if (valido) {
             msgExito.style.display = 'block';
             form.reset();
@@ -62,5 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
             telefono.classList.add('input-error');
             valido = false;
         }
+
     });
 });
