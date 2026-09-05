@@ -25,9 +25,7 @@ body {
     padding: 0 1rem;
  }
 
-/* ============================================
-   HEADER Y NAVEGACIÓN
-   ============================================ */
+/* HEADER Y NAVEGACIÓN */
 
 .encabezado {
     background: var(--color-principal);
@@ -88,9 +86,7 @@ body {
 }
 
 
-/* ============================================
-   SECCIONES PRINCIPALES
-   ============================================ */
+/* SECCIONES PRINCIPALES */
 .seccion-destacada {
     background: var(--color-principal);
     color: white;
