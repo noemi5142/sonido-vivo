@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const email = document.getElementById('email');
-        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const regexEmail = /^[^\s@]+@duocuc\.cl$/; 
         if (!regexEmail.test(email.value)) {
-            document.getElementById('error-email').textContent = 'Formato de correo inválido (ej: user@mail.com)';
+            document.getElementById('error-email').textContent = 'Formato de correo intitucional invalido (ej: user@duocuc.cl)';
             email.classList.add('input-error');
             valido = false;
         }
