@@ -135,6 +135,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem 0;
+    flex: 1;
 }
 
 .tarjeta {
@@ -387,6 +388,69 @@ body {
     .caja-formulario { 
         padding: 1.5rem; 
         margin: 2rem 1rem; 
+    }
+}
+/* En catalogo - Sidebar de Categorías + Grilla */
+
+.catalogo-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.sidebar-categorias {
+    width: 250px;
+    flex-shrink: 0;
+    background: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Mismo estilo de sombra */
+}
+
+.sidebar-categorias h3 {
+    color: var(--color-principal);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.sidebar-categorias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-categorias li {
+    margin-bottom: 0.3rem;
+}
+
+.sidebar-categorias a {
+    text-decoration: none;
+    color: var(--color-principal);
+    display: block;
+    padding: 0.6rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.95rem;
+}
+
+.sidebar-categorias a:hover,
+.sidebar-categorias a.activo {
+    background-color: var(--color-acento);
+    color: white;
+}
+
+
+/* Responsive en celulares el sidebar se pone arriba de los productos */
+@media (max-width: 768px) {
+    .catalogo-layout {
+        flex-direction: column;
+    }
+    
+    .sidebar-categorias {
+        width: 100%;
     }
 }
 

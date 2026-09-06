@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
             telefono.classList.add('input-error');
             valido = false;
         }
+        
 
     });
 });
