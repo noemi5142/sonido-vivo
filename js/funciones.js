@@ -14,8 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Validar Nombre
         const nombre = document.getElementById('nombre');
-        if (nombre.value.trim().length < 3) {
-            document.getElementById('error-nombre').textContent = 'Ingresa al menos 3 caracteres';
+        const regexNombre = /^[a-zA-Z\s]+$/; // Solo letras y espacios
+        if (!regexNombre.test(nombre.value.trim())) {
+            document.getElementById('error-nombre').textContent = 'El nombre solo debe contener letras y espacios';
             nombre.classList.add('input-error');
             valido = false;
         }
@@ -30,15 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Validar Motivo
         const motivo = document.getElementById('motivo');
-        if (motivo.value === "") {
-            document.getElementById('error-motivo').textContent = 'Selecciona un motivo';
+        const regexMotivo = /^[a-zA-Z\s]+$/; // Solo letras y espacios
+        if (!regexMotivo.test(motivo.value.trim())) {
+            document.getElementById('error-motivo').textContent = 'El motivo solo debe contener letras y espacios';
             motivo.classList.add('input-error');
             valido = false;
         }
 
         // Validar Mensaje
         const mensaje = document.getElementById('mensaje');
-        if (mensaje.value.trim().length < 10) {
+        const regexMensaje = /^.{10,}$/; // Al menos 10 caracteres
+        if (!regexMensaje.test(mensaje.value.trim())) {
             document.getElementById('error-mensaje').textContent = 'El mensaje debe tener más de 10 caracteres';
             mensaje.classList.add('input-error');
             valido = false;
